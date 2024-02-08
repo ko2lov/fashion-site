@@ -1,11 +1,14 @@
+import Header from "./components/header/Header";
+import Promo from "./components/promo/Promo";
+
+
 function App() {
 
-  const project = 'Fasion'
 
   return (
     <div className="App">
-        <h1>Hello React!!</h1>
-        <h2>{project}</h2>
+        <Header/>
+        <Promo/>
     </div>
   );
 }
