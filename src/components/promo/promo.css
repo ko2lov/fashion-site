@@ -20,7 +20,7 @@
     font-size: 96px;
     font-weight: 900;
     line-height: 1.25;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
     max-width: 480px;
 }
 
@@ -30,7 +30,7 @@
     font-weight: 400;
     line-height: 1.25;
     letter-spacing: -0.05em;
-    padding-bottom: 32px;
+    padding-bottom: 46px;
 }
 
 .prom__btn-wrapper{
@@ -65,11 +65,39 @@
 
 .highlight::before{
     content: "";
-    display: block;
+    display: relative;
     position: absolute;
-    top: -12px;
-    bottom: -12px;
-    left:-20px;
-    right:-20px;
+    top: -3px;
+    bottom: 11px;
+    left: -36px;
+    right: -171px;
     background-color: #fff;
+    rotate: -2deg;
+}
+
+.highlight span {
+    position: relative;
+    z-index: 1;
+}
+
+.highlight__yellow{
+    position: relative;
+    display: inline-block;
+}
+
+.highlight__yellow::before{
+    content: "";
+    display: relative;
+    position: absolute;
+    top: -9px;
+    bottom: 11px;
+    left: -25px;
+    right: -98px;
+    background-color: var(--yellow);
+    rotate: -2deg
+}
+
+.highlight__yellow span {
+    position: relative;
+    z-index: 1;
 }
