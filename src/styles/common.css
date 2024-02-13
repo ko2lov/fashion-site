@@ -14,3 +14,24 @@ body{
     padding: 0 30px;
 }
 
+
+.title-2{
+    position: relative;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.04;
+    letter-spacing: 0.06em;
+}
+
+.title-2::after{
+    content: "";
+    display: inline-block;
+    width: 190px;
+    height: 32px;
+    background-image: url(../fashion-images/icons/decor-yellow-title.svg);
+    position: relative;
+    right: 190px;
+    bottom: -14px;
+    z-index: -1;
+}
